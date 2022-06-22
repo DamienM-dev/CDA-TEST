@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design/css/style.css">
     <title>Ma bolée</title>
 </head>
 <body>
@@ -13,11 +13,23 @@
     <div id="block_bouton">
         <button id="play">rejouer</button>
     </div>
-    <div id="block_bouton">
-        <button id="impossible">refuser entrée CDA</button>
+
+    <div id="block_maybe">
+
+        <div id="block_impossible">
+            <button id="button_impossible">refuser entrée CDA</button>
+        </div>
+
+        <div id="block_congratulation">
+            <button id="button_congratulation">accepter entrée CDA</button>
+        </div>
+
+
     </div>
 
 
-    <script src="bolee.js"></script>
+    <script src="script/bolee.js"></script>
+    <script src="script/confetti.js"></script>
+ 
 </body>
 </html>

@@ -1,0 +1,65 @@
+/* ----------IMPORT----------*/
+@import 'variables';
+
+
+/* ----------STYLISATION GENERALE---------- */
+
+body {
+    background-color:$couleurPrincipal ;
+    text-align: center;
+}
+
+h1 {
+    color:$couleurText ;
+    font-size: 25px;
+}
+ 
+p {
+    color:$couleurText ;
+    font-size: 20px
+}
+
+
+/* ----------BOUTON---------- */
+button {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    font:{
+        size: 15px;
+        weight: bold;
+    }
+
+    text-transform: uppercase;
+    background-color:$couleurSecondaire;
+    color: $couleurText;
+    cursor: pointer;
+
+    &:hover {
+        background-color:$couleurText;
+        color: $couleurSecondaire;
+
+    }
+}
+
+#block_bouton {
+    margin-bottom: 50px;
+}
+
+#block_maybe {
+    display: flex;
+    justify-content: center;
+
+    #button_impossible, #button_congratulation {
+        width: 160px;
+    }
+
+    #button_impossible {
+        cursor: not-allowed;
+    }
+
+}
+
+
+
+
