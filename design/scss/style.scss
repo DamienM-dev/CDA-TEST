@@ -5,17 +5,17 @@
 /* ----------STYLISATION GENERALE---------- */
 
 body {
-    background-color:$couleurPrincipal ;
+    background-color:$couleurPrincipal;
     text-align: center;
 }
 
 h1 {
-    color:$couleurText ;
+    color:$couleurText;
     font-size: 25px;
 }
  
 p {
-    color:$couleurText ;
+    color:$couleurText;
     font-size: 20px
 }
 
@@ -26,20 +26,19 @@ button {
     width: 100px;
     height: 50px;
     padding: 5px;
+    text-transform: uppercase;
+    background-color:$couleurSecondaire;
+    color: $couleurText;
+    cursor: pointer;
     font:{
         size: 15px;
         weight: bold;
     }
 
-    text-transform: uppercase;
-    background-color:$couleurSecondaire;
-    color: $couleurText;
-    cursor: pointer;
-
     &:hover {
         background-color:$couleurText;
         color: $couleurSecondaire;
-
+        
     }
 }
 
@@ -84,10 +83,10 @@ button {
     }
 }
 
-
 #checkbox_translate {
     display: none;
 }
+// Le ~ (tilde) permet de sélectionner l'élément suivant
 
 #checkbox_translate:checked ~ #block_translation {
     transform: translateX(83%);

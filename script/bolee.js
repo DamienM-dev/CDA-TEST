@@ -9,9 +9,10 @@ do {
    play.addEventListener('click', NombreBolee);
    
    function NombreBolee() {
-      
+      //Je crée un paragraphe à chaque itération
       let p = document.createElement('p');
-      
+
+      //La boite de dialogue
       let nbr_bolee = prompt("Combien de bolées vous reste t'il à boire ?");
       
       
@@ -19,9 +20,11 @@ do {
       if (nbr_bolee > 1 && nbr_bolee <= 99 ) {
          alert(nbr_bolee + " bolées de cidre sur le mur, " + nbr_bolee + " bolées sans alcool.\n Bois en un et au suivant ! " + (nbr_bolee -1) + " bolées de cidre sur le mur.");
          
-         
+         //Pour conserver les lignes sans les écraser
          p.innerHTML += nbr_bolee + " bolées de cidre sur le mur, " + nbr_bolee + " bolées sans alcool.<br />Bois en un et au suivant ! " + (nbr_bolee -1) + " bolées de cidre sur le mur.";
+         //j'ajoute l'élément p créer
          document.body.append(p);
+         //Je met le block bouton avant les paragraphes
          document.querySelector('#block_bouton').prepend(p);
          
 
@@ -50,6 +53,7 @@ do {
       
 
          // Si ce n'est pas un nombre ou bien si il est négatif
+         
       } else if ( isNaN(nbr_bolee) == true || nbr_bolee < 0 || IsEmpty(nbr_bolee) == true) {
          alert("Hey,que fait tu ?");
 
